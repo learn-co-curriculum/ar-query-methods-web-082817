@@ -3,15 +3,11 @@ class Movie < ActiveRecord::Base
   has_many :movie_categories
   has_many :categories, through: :movie_categories
 
-  def self.average_rating
-    
-  end
-
   def self.eighties
     
   end
 
-  def self.average_rating_eighties_movies
+  def self.highest_rated_eighties_movie
     
   end
 
@@ -20,6 +16,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.lowest_rated
+    
   end
 
   def self.most_reviewed
